@@ -1,0 +1,2 @@
+docker-compose exec php php /var/www/html/install/cli_install.php install --db_hostname db --db_username opencart --db_password password --db_database opencart --db_driver mysqli --db_port 3306 --username admin --password admin --email youremail@example.com --http_server http://localhost:8080/
+docker-compose exec nginx mv /var/www/html/system/storage/* /var/www/storage
